@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1553819729 source:/home/alumno/Escritorio/Carpeta nueva/Clase 4/utn.c
+	<stdio.h>
+	<stdlib.h>
+
+1553812426 source:/home/alumno/Escritorio/Carpeta nueva/Clase 4/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1553812225 /home/alumno/Escritorio/Carpeta nueva/Clase 4/utn.h
+
