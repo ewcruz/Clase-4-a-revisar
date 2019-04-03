@@ -1,38 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void utn_pruebita (void)
+
+float getFloat(char mensaje[])
 {
-    printf("hola mundo desde utn.c\n");
+    int auxiliar;
+    printf("%s",&mensaje);
+    scanf("%f",&auxiliar);
+    return auxiliar;
 }
 
-int utn_getNumber(int* pNumero,int max,int min,char* msg,char* msgError, int cantIntentos)
+int getInt(char mensaje[])
 {
-    int numero;
-    int ret;
-    int cantIntentos;
+    int auxiliar;
+    printf("%s",&mensaje);
+    scanf("%d",&auxiliar);
+    return auxiliar;
+}
 
-    ret=-1;
-
-
-    while(cantIntentos>0)
-    {
-        printf("%s",msg);
-        if(scanf("%d",&numero)==1);
-
-
-    if(numero>min&&numero<max)
-    {
-        (*pNumero)=numero;
-        ret=0;
-        break;
-    }
-
-    printf("%s",msgError);
-    cantIntentos--;
-
-    return ret;
-
-    }
-
+char getChar(char mensaje[])
+{
+    char auxiliar;
+    printf("%s",&mensaje);
+    fflush(stdin);   //windows
+    //fpurge(stdin); //linux
+    scanf("%c",&auxiliar);
+    return auxiliar;
 }

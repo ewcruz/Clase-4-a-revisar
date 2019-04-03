@@ -1,7 +1,8 @@
 #ifndef UTN_H_INCLUDED
 #define UTN_H_INCLUDED
 
-void utn_pruebita(void);
-int utn_getNumber(int* pNumero,int max,int min,char* msg,char* msgError);
+float getFloat(char mensaje[]);
+int getInt(char mensaje[]);
+char getChar(char mensaje[]);
 
 #endif // UTN_H_INCLUDED
